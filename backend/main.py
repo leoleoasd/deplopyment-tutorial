@@ -14,4 +14,6 @@ def hello_world():
 
 @app.route("/random")
 def random_number():
-    return f"{random.randint(0, 100)}"
+    number = random.randint(0, 100)
+    print("Random number generated: ", number)
+    return f"{number}"
